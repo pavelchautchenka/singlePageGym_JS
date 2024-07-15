@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+    <div class="header__left-block">
+        <div class="header__logo">
+            <img src="icons/logo.svg" alt="Logo">
+        </div>
+        <nav class="header__links">
+            <a href="#" class="header__link">Workouts</a>
+            <a href="#" class="header__link">About Us</a>
+        </nav>
+    </div>
+    <div class="header__right-block">
+        <button class="btn btn_white" data-modal>Contact Us</button>
+    </div>
+</header>
+<div class="sidepanel">
+    <div class="sidepanel__text"><span>Social Media</span></div>
+    <div class="sidepanel__divider"></div>
+    <a href="#" class="sidepanel__icon">
+        <img src="icons/instagram.svg" alt="Instagram">
+    </a>
+    <a href="#" class="sidepanel__icon">
+        <img src="icons/facebook.svg" alt="Facebook">
+    </a>
+</div>
+
+<div class="preview">
+    <div class="bgc_blue"></div>
+    <div class="container">
+        <div class="tabcontainer">
+            <div class="tabcontent">
+                <img src="img/tabs/crossfit.webp" alt="cardio">
+                <div class="tabcontent__descr">
+                    "Cardio" workouts are a great way to improve your physical fitness and endurance. They help strengthen the heart and lungs, as well as burn calories.
+                </div>
+            </div>
+            <div class="tabcontent">
+                <img src="img/tabs/gym.webp" alt="strength">
+                <div class="tabcontent__descr">
+                    "Strength" training involves exercises using weights that help build muscle mass, improve strength, and shape the body.
+                </div>
+            </div>
+            <div class="tabcontent">
+                <img src="img/tabs/stretch.webp" alt="flexibility">
+                <div class="tabcontent__descr">
+                    "Flexibility" workouts are a set of exercises aimed at improving flexibility, joint mobility, and preventing injuries.
+                </div>
+            </div>
+            <div class="tabcontent">
+                <img src="img/tabs/yoga.webp" alt="yoga">
+                <div class="tabcontent__descr">
+                    "Yoga" is a practice that combines physical exercises, breathing techniques, and meditation aimed at improving physical and mental health.
+                </div>
+            </div>
+            <div class="tabheader">
+                <h3>Choose Your Workout Style</h3>
+                <div class="tabheader__items">
+                    <div class="tabheader__item tabheader__item_active">Cardio</div>
+                    <div class="tabheader__item">Strength</div>
+                    <div class="tabheader__item">Flexibility</div>
+                    <div class="tabheader__item">Yoga</div>
+                </div>
+            </div>
+        </div>
+        <div class="preview__life">Live Your Full Life!</div>
+    </div>
+</div>
+
+<div class="divider"></div>
+
+<div class="offer">
+    <div class="bgc_y"></div>
+    <div class="container">
+        <div class="offer__text">
+            <h2 class="title">What We Offer</h2>
+            <div class="offer__descr">
+                Our main idea is the right workout. It can be simple and effective. We are not just a gym, we are a service! We take care of all the boring but important aspects like workout plans, nutrition, and monitoring progress. You only get a healthy, effective workout delivered right to your schedule.
+            </div>
+        </div>
+        <div class="offer__action">
+            <button class="btn btn_dark" data-modal>Contact Us</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="offer__advantages">
+            <h2>Fast and Effective</h2>
+            <div class="offer__advantages-text">
+                Home workouts take a lot of effort, time, and nerves. We provide a workout plan for the whole day so you can act as you please, not adapting to anyone and being sure of the quality of the training!
+            </div>
+            <h2>Proper Nutrition</h2>
+            <div class="offer__advantages-text">
+                We have developed a special menu that takes into account all the nuances of proper nutrition, from the balance of proteins, fats, and carbohydrates to their preparation and meal distribution.
+            </div>
+        </div>
+        <div class="offer__slider">
+            <div class="offer__slider-counter">
+                <div class="offer__slider-prev">
+                    <img src="icons/left.svg" alt="prev">
+                </div>
+                <span id="current">03</span>
+                /
+                <span id="total">04</span>
+                <div class="offer__slider-next">
+                    <img src="icons/right.svg" alt="next">
+                </div>
+            </div>
+            <div class="offer__slider-wrapper">
+                <div class="offer__slider-inner">
+                    <div class="offer__slide">
+                        <img src="img/slider/1.webp" alt="pepper">
+                    </div>
+                    <div class="offer__slide">
+                        <img src="img/slider/2.webp" alt="food">
+                    </div>
+                    <div class="offer__slide">
+                        <img src="img/slider/3.webp" alt="oil">
+                    </div>
+                    <div class="offer__slide">
+                        <img src="img/slider/4.webp" alt="paprika">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="divider"></div>
+
+<div class="calculating">
+    <div class="container">
+        <h2 class="title">Calculate Your Calorie Needs</h2>
+        <div class="calculating__field">
+            <div class="calculating__subtitle">
+                Your Gender
+            </div>
+            <div class="calculating__choose" id="gender">
+                <div id="female" class="calculating__choose-item calculating__choose-item_active">Female</div>
+                <div id="male" class="calculating__choose-item">Male</div>
+            </div>
+
+            <div class="calculating__subtitle">
+                Your Body Metrics
+            </div>
+            <div class="calculating__choose calculating__choose_medium">
+                <input type="text" id="height" placeholder="Enter Height" class="calculating__choose-item">
+                <input type="text" id="weight" placeholder="Enter Weight"  class="calculating__choose-item">
+                <input type="text" id="age" placeholder="Enter Age" class="calculating__choose-item">
+            </div>
+
+            <div class="calculating__subtitle">
+                Select Your Physical Activity Level
+            </div>
+            <div class="calculating__choose calculating__choose_big">
+                <div data-ratio="1.2" id="low" class="calculating__choose-item">Low Activity</div>
+                <div data-ratio="1.375" id="small"  class="calculating__choose-item calculating__choose-item_active">Moderate Activity</div>
+                <div data-ratio="1.55" id="medium" class="calculating__choose-item">Average Activity</div>
+                <div data-ratio="1.725" id="high" class="calculating__choose-item">High Activity</div>
+            </div>
+
+            <div class="calculating__divider"></div>
+
+            <div class="calculating__total">
+                <div class="calculating__subtitle">
+                    Your Daily Calorie Needs:
+                </div>
+                <div class="calculating__result">
+                    <span>2700</span> kcal
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="divider"></div>
+
+<div class="menu">
+    <h2 class="title">Our Daily Prices</h2>
+
+    <div class="menu__field">
+        <div class="container">
+
+        </div>
+    </div>
+</div>
+
+<div class="order">
+    <div class="container">
+        <div class="title">Order a Trial Day Right Now!</div>
+        <form action="#" class="order__form">
+            <input required placeholder="Your Name" name="name" type="text" class="order__input">
+            <input required placeholder="Your Phone Number" name="phone" type="phone" class="order__input">
+            <img src="icons/right.svg" alt="right">
+            <button class="btn btn_dark btn_min">Call Me Back</button>
+        </form>
+    </div>
+</div>
+
+<div class="divider"></div>
+
+<div class="promotion">
+    <div class="bgc_y"></div>
+    <div class="container">
+        <div class="promotion__text">
+            <div class="title">Promotion for New Clients!</div>
+            <div class="promotion__descr">
+                We value each client and offer you to become one of them on very favorable terms.
+                Everyone who orders a weekly meal delivery will receive a <span>20% discount!</span>
+                <br><br>
+                The promotion ends on May 20 at 00:00
+            </div>
+        </div>
+        <div class="promotion__timer">
+            <div class="title">Time Left Until the End of the Promotion:</div>
+            <div class="timer">
+                <div class="timer__block">
+                    <span id="days">12</span>
+                    days
+                </div>
+                <div class="timer__block">
+                    <span id="hours">20</span>
+                    hours
+                </div>
+                <div class="timer__block">
+                    <span id="minutes">56</span>
+                    minutes
+                </div>
+                <div class="timer__block">
+                    <span id="seconds">20</span>
+                    seconds
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="social">
+            <div class="subtitle">We Are on Social Media:</div>
+            <a href="#" class="link">Instagram</a>
+            <a href="#" class="link">Facebook</a>
+        </div>
+        <div class="pepper">
+            <img src="icons/veg.svg" alt="pepper">
+        </div>
+        <div class="call">
+            <div class="subtitle">Or Call Us</div>
+            <a href="#" class="link">+380678341034</a>
+            <a href="#" class="link">+380500941356</a>
+        </div>
+    </div>
+</footer>
+
+<div class="modal">
+    <div class="modal__dialog">
+        <div class="modal__content">
+            <form action="#">
+                <div class="modal__close" data-close>&times;</div>
+                <div class="modal__title">We Will Contact You as Soon as Possible!</div>
+                <input required placeholder="Your Name" name="name" type="text" class="modal__input">
+                <input required placeholder="Your Phone Number" name="phone" type="phone" class="modal__input">
+                <button class="btn btn_dark btn_min">Call Me Back</button>
+            </form>
+        </div>
+    </div>
+</div>
+<script type="module" src="js/script.js"></script>
+</body>
+</html>
