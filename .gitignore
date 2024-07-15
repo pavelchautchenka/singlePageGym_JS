@@ -4,11 +4,11 @@ Thumbs.db
 *.log
 
 node_modules/
-js/modules
+
 js/current.js
 js/script.js
-js/modules_in_work
-js/current_in_work.js
+
+
 venv/
 
 *.class
